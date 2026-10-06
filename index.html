@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Con la mente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Lluvia de fondo (se genera en script.js) -->
+    <div id="lluvia" class="lluvia" aria-hidden="true"></div>
+
+    <header class="encabezado" id="encabezado">
+      <h1></h1>
+      <p class="subtitulo">Una pequeña nota de mi mente
+      </p>
+    </header>
+
+    <main class="escenario">
+      <div
+        class="sobre"
+        id="sobre"
+        role="button"
+        tabindex="0"
+        aria-expanded="false"
+        aria-label="Abrir la carta"
+      >
+        <div class="sobre-fondo"></div>
+
+        <article class="carta">
+          <p class="carta-texto carta-intro">
+            Perdón.<br>
+            Pero ya no quiero que mi corazón sufra. Ya son casi 7 meses de esto: "https://gamerspaul72-maker.github.io/Nany/"
+            y ahora me siento estancado, ahora escribo esto solo para decir que ahora sí, voy a evitar todo lo que se relacione algo más que una amistad.
+          </p>
+          <div class="carta-linea"></div>
+          <p class="carta-texto carta-cuerpo">
+            Hoy escribo esto con la mente, para poder guardar a mi corazón. No le voy a hacer falta a mi palabra, siempre voy a estar para lo que quiera y necesite... y si algún día usted quiere intentar algo, aqui estará mi corazón recuperandose. Encantado de decirle que ¡Sí! mientras esté solo. <br>
+          </p>
+          <p class="carta-texto carta-intro">
+            La verdad no quiero perder comunicación, es cierto todo lo que dije, hasta lo que sé que ha dicho el Michael (me ha contado pero no sé si me ha dicho todo), y es por eso que no quería decir nada, porque ahi andan molestandola con eso. <br>
+           <br> Perdón. <br>
+           Si lo que le ha dicho no le ha gustado, ya sea por como se lo dijo o que le dijo. Se me fue de las manos el contarle eso.
+           No perdamos la racha. Y tampoco quiero desaparecer, pero por ahora me retiro.
+           <br>Porque siento que me lastimo con lo que siento, y no quiero culparla, o hacerla sentir mal, simplemente mi mente me la juega mal.
+           Y me la paso sobrepensando, y siento que en vez de acercarme a usted, más me alejo. Y no quiero eso, porque usted es una persona muy especial para mí. <br>
+           <br>Solo quiero despejar mi mente, para que mi corazón pueda sanar y no sufrir más. <br>
+          </p>
+          <p class="carta-texto carta-firma">Junior</p>
+        </article>
+
+        <div class="sobre-frente"></div>
+        <div class="sobre-solapa"></div>
+        <svg class="sello" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 21s-7.5-4.6-9.6-9.2C1 8.6 2.6 5 6 5c2 0 3.4 1.1 4.2 2.4h3.6C14.6 6.1 16 5 18 5c3.4 0 5 3.6 3.6 6.8C19.5 16.4 12 21 12 21z"
+          />
+        </svg>
+      </div>
+    </main>
+
+    <p class="instruccion" id="instruccion">Toca el sobre para abrirlo</p>
+
+    <div class="botones">
+      <button class="boton" id="Abrir" type="button">Abrir</button>
+      <button class="boton" id="Cerrar" type="button" disabled>Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
